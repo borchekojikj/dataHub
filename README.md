@@ -1,11 +1,12 @@
 # BrainsterProject_BorcheKojikj_FS14
+
 <a name="readme-top"></a>
 
 <div align="center">
   <a href="#">
     <!-- <img src="{{ asset('images/logo.png') }}" alt="Logo" width="80" height="80"> -->
   </a>
-  <h3 align="center">Kine Moe (Project 3) - Borche Kojikj FS14</h3>
+  <h3 align="center">DataHub</h3>
 </div>
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -39,9 +40,9 @@
   <li><img alt="Laravel" src="https://img.shields.io/badge/-Laravel-FF2D20?logo=laravel&logoColor=white"/></li>
   <li><img alt="jQuery" src="https://img.shields.io/badge/-jQuery-0769AD?logo=jquery&logoColor=white"/></li>
 </ul>
-<h3 id="about-the-project">About The Project:</h3>
+<h3 id="about-the-project">About DataHub"</h3>
 <p>
-  KineMoe is a streaming service focused on Macedonian and Balkan cinematic works, featuring IMDb-like functionalities and social media aspects to promote regional culture and collaboration among artists and film enthusiasts.
+DataHub is a comprehensive web application designed to manage and distribute product information, including catalogs, brands, and product details. It provides an intuitive admin panel for data management and a robust API for data access. Key features include:
 </p>
 <p>
   This repository contains the Admin Panel for managing the KineMoe platform, developed using Laravel with Eloquent ORM, JavaScript, jQuery, and HTML5.
@@ -52,73 +53,28 @@
   <b>Password:</b> Test1234!
 </div>
 <br>
-<h3>Key Features:</h3>
-<h5>User Management</h5>
+<h5>Part 1: Database</h5>
 <ol>
-  <li><b>View User Profiles:</b> Admins can view detailed user profiles, engagement metrics, and activity logs.</li>
-  <li><b>Edit User Profiles:</b> Admins can update user information.</li>
-  <li><b>Delete User Profiles:</b> Admins can delete user profiles with a confirmation step.</li>
-  <li><b>Suspend/Unsuspend Users:</b> Admins can manage account status to handle misuse or violations.</li>
-  <li><b>Assign Roles:</b> Admins can assign and manage user roles (Viewer, Artist, Moderator).</li>
-  <li><b>Manage Permissions:</b> Admins can adjust permissions for each role.</li>
-  <li><b>Track Engagement Metrics:</b> Admins can monitor user activities such as comments, discussions, and watch history.</li>
-  <li><b>Award Points and Badges:</b> Admins can reward users for contributions or achievements.</li>
+  <li><b>Create Tables:</b> Design and establish the database structure with tables for catalogs, brands, and product details.</li>
+  <li><b>Seed Data:</b> Import and insert initial data from an Excel file into the database using PHPSpreadsheet.</li>
 </ol>
-<h5>Content Management</h5>
+<h5>Part 2: Admin Panel</h5>
 <ol>
-  <li><b>Add New Content:</b> Admins can add movies, series, and podcasts, including detailed metadata.</li>
-  <li><b>Edit Existing Content:</b> Admins can update content information.</li>
-  <li><b>Delete Content:</b> Admins can remove content with a confirmation step.</li>
-  <li><b>Content Categorization:</b> Admins can organize content by genres and categories.</li>
-  <li><b>Schedule Releases:</b> Admins can set release dates and times for new content.</li>
-  <li><b>Manage Upcoming Releases:</b> Admins can view and adjust the content release schedule.</li>
+  <li><b>Authentication:</b> Implement secure login functionality for admins to access the admin panel without registration.</li>
+  <li><b>Catalog Management:</b> Develop CRUD operations for creating, reading, updating, and deleting catalog entries.</li>
+  <li><b>CSV File Upload:</b> Create a form to upload CSV files and process them to update the database.</li>
+  <li><b>Content Management:</b> Provide interfaces to manage and update static content like "About Us" and "Contact Us" pages.</li>
+  <li><b>FAQ Management:</b> Implement CRUD operations for maintaining FAQ entries.</li>
 </ol>
-<h5>Artist Management</h5>
+<h5>Part 3: APIs</h5>
 <ol>
-  <li><b>View Artist Profiles:</b> Admins can access detailed profiles of registered artists.</li>
-  <li><b>Edit Artist Profiles:</b> Admins can update artist information.</li>
-  <li><b>Verify Artists:</b> Admins can verify artist accounts and provide a verification badge.</li>
-  <li><b>Track Artist Contributions:</b> Admins can manage artist content submissions and collaborations.</li>
-</ol>
-<h5>Community and Engagement</h5>
-<ol>
-  <li><b>Moderate Posts:</b> Admins can review, approve, edit, or delete community posts.</li>
-  <li><b>Highlight Posts:</b> Admins can pin important posts for increased visibility.</li>
-  <li><b>Moderate Comments:</b> Admins can manage comments on posts and content.</li>
-  <li><b>Delete Inappropriate Comments:</b> Admins can remove comments that violate guidelines.</li>
-  <li><b>Manage User Reports:</b> Admins can handle reports of inappropriate content or behavior.</li>
-  <li><b>Take Action on Reports:</b> Admins can warn, suspend, or ban users and remove content based on reports.</li>
-</ol>
-<h5>System Settings</h5>
-<ol>
-  <li><b>General Settings:</b> Admins can configure platform settings including site name, logo, contact info, and terms of service.</li>
-</ol>
-<h3 id="installation">Installation</h3>
-<ol>
-
-
-  <li>From https://github.com/JulienRAVIA/FakerCinemaProviders
-    <pre>
-    <code>Run: composer require xylis/faker-cinema-providers</code>
-    </pre>
-  </li>
-  <li>From https://github.com/laravel/ui
-    <pre>
-    <code>Run: 
-      composer require laravel/ui </br>
-   </code>
-    <code>Run: 
-      php artisan ui bootstrap --auth </br>
-   </code>
-    </pre>
-  </li>
-
-  <li>Start the development server:
-    <pre>
-    <code>php artisan serve</code>
-    <code>npm run dev</code>
-    </pre>
-  </li>
+  <li><b>API Authentication:</b> Secure API endpoints for user login and registration using Sanctum.</li>
+  <li><b>Catalogue APIs:</b> Develop APIs to return all catalogue PDF files.</li>
+  <li><b>Filter APIs:</b> Implement APIs to return categories, brands, and filtered product lists based on price, discount, and brand.</li>
+  <li><b>Product APIs:</b> Create APIs to return products by category, discount level, price range, and brand, with support for pagination and combined filters.</li>
+  <li><b>Subscription API:</b> Develop an API to handle newsletter subscriptions and save email addresses.</li>
+  <li><b>FAQ API:</b> Create an API to return all FAQ entries.</li>
+  <li><b>API Documentation:</b> Provide comprehensive documentation to help frontend developers integrate with the DataHub APIs.</li>
 </ol>
 <h3 id="usage">Usage</h3>
 <p>Access the admin panel at <code>http://localhost:8000/login</code> and log in with your admin credentials.</p>
