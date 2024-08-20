@@ -47,8 +47,8 @@ DataHub is a comprehensive web application designed to manage and distribute pro
 </p>
 <div>
   <p>Admin User:</p>
-  <b>Username:</b> borche@gmail.com <br>
-  <b>Password:</b> Test1234!
+  <b>Username:</b> admin@gmail.com <br>
+  <b>Password:</b> password
 </div>
 <br>
 <h5>Part 1: Database</h5>
