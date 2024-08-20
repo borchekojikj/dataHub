@@ -1,4 +1,4 @@
-# BrainsterProject_BorcheKojikj_FS14
+# DataHub
 
 <a name="readme-top"></a>
 
@@ -6,7 +6,6 @@
   <a href="#">
     <!-- <img src="{{ asset('images/logo.png') }}" alt="Logo" width="80" height="80"> -->
   </a>
-  <h3 align="center">DataHub</h3>
 </div>
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -21,12 +20,11 @@
     <li>
       <a href="#installation">Installation</a>
     </li>
-    <li>
-      <a href="#usage">Usage</a>
-    </li>
+
     <li>
       <a href="#contact">Contact</a>
     </li>
+
   </ol>
 </details>
 <h3 id="built-with">Built With:</h3>
@@ -76,9 +74,7 @@ DataHub is a comprehensive web application designed to manage and distribute pro
   <li><b>FAQ API:</b> Create an API to return all FAQ entries.</li>
   <li><b>API Documentation:</b> Provide comprehensive documentation to help frontend developers integrate with the DataHub APIs.</li>
 </ol>
-<h3 id="usage">Usage</h3>
-<p>Access the admin panel at <code>http://localhost:8000/login</code> and log in with your admin credentials.</p>
-<h3 id="contact">Contact</h3>
+
 <ul>
     <li>Email: borcekojikj@gmail.com</li>
     <li>Telephone: +389 71 226 904</li>
